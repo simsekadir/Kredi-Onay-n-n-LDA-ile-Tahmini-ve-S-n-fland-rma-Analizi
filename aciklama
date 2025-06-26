@@ -1,0 +1,13 @@
+Finansal değişkenler ve krediye ilişkin skorlar kullanılarak önemli öznitelikler seçildi.
+
+Kategorik değişkenler sayısal hale getirildi (label encoding).
+
+Veri seti eğitim (%80) ve test (%20) olarak ayrıldı.
+
+LDA modeli eğitilerek, doğruluk, precision, recall, F1-score gibi performans metrikleri hesaplandı.
+
+Modelin sınıflandırma sınırları farklı değişken kombinasyonları için ggplot2 ve klaR::partimat ile görselleştirildi.
+
+10-fold cross-validation ile modelin aşırı öğrenme (overfitting) riski değerlendirildi.
+
+ROC eğrisi ve AUC skoru (0.986) ile modelin ayırt etme gücü raporlandı.
